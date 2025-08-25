@@ -1,0 +1,46 @@
+title: Cognos Solution
+description: Tech, data, and AI projects by Ian.
+url: https://cognossolution.com
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# Basic site options
+locale: en-US
+markdown: kramdown
+permalink: /:categories/:title/
+minimal_mistakes_skin: "default"
+
+# Author profile
+author:
+  name: Ian Deuberry
+  avatar: /assets/images/avatar.jpg
+  bio: >
+    Tech + finance brain. I build automation, data pipelines, and AI prototypes that actually work.
+    ENTJ/ENTP energy, consulting background, and a not-so-subtle obsession with cars.
+  location: Chicago, IL
+  links:
+    - label: GitHub
+      icon: "fab fa-github"
+      url: https://github.com/YOUR_GH_USERNAME
+    - label: LinkedIn
+      icon: "fab fa-linkedin"
+      url: https://www.linkedin.com/in/YOUR_LINKEDIN
+    - label: Resume
+      icon: "fas fa-file"
+      url: /resume/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# Navigation
+nav:
+  - title: Home
+    url: /
+  - title: Projects
+    url: /projects/
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /contact/
