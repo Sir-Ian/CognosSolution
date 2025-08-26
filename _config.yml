@@ -4,7 +4,7 @@ description: "Tech, data, and AI projects by Ian"
 url: "https://cognossolution.com"
 baseurl: ""
 
-remote_theme: cotes2020/jekyll-theme-chirpy
+theme: minima
 
 lang: en
 timezone: America/Chicago
@@ -37,5 +37,4 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-remote-theme
   - jekyll-paginate
