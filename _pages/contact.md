@@ -6,6 +6,6 @@ permalink: /contact/
 
 Let’s talk projects, data, or cars.  
 
-- **Email**: hello@cognossolution.com  
-- **GitHub**: [YOUR_GH_USERNAME](https://github.com/YOUR_GH_USERNAME)  
-- **LinkedIn**: [YOUR_LINKEDIN](https://www.linkedin.com/in/YOUR_LINKEDIN)  
+- **Email**: ian@cognossolution.com  
+- **GitHub**: [Sir-Ian](https://github.com/Sir-Ian)  
+- **LinkedIn**: [MY_LINKEDIN](https://www.linkedin.com/in/ian-deuberry)  
