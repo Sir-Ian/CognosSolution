@@ -1,46 +1,41 @@
 title: Cognos Solution
-description: Tech, data, and AI projects by Ian.
-url: https://cognossolution.com
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+tagline: "Cognos Solution, a Jekyll blog powered by Chirpy"
+description: "Tech, data, and AI projects by Ian"
+url: "https://cognossolution.com"
+baseurl: ""
 
-# Basic site options
-locale: en-US
-markdown: kramdown
-permalink: /:categories/:title/
-minimal_mistakes_skin: "default"
+remote_theme: cotes2020/jekyll-theme-chirpy
 
-# Author profile
+lang: en
+timezone: America/Chicago
+
 author:
   name: Ian Deuberry
-  avatar: /assets/images/avatar.jpg
-  bio: >
-    Tech + finance brain. I build automation, data pipelines, and AI prototypes that actually work.
-    ENTJ/ENTP energy, consulting background, and a not-so-subtle obsession with cars.
-  location: Chicago, IL
-  links:
-    - label: GitHub
-      icon: "fab fa-github"
-      url: https://github.com/YOUR_GH_USERNAME
-    - label: LinkedIn
-      icon: "fab fa-linkedin"
-      url: https://www.linkedin.com/in/YOUR_LINKEDIN
-    - label: Resume
-      icon: "fas fa-file"
-      url: /resume/
+  bio: "Tech + finance brain. I build automation, data pipelines, and AI prototypes that actually work."
+  github: Sir-Ian
 
-# Plugins
+github:
+  username: Sir-Ian
+
+twitter:
+  username: ""
+
+social:
+  name: Ian Deuberry
+  email: ""
+  links:
+    - https://github.com/Sir-Ian
+
+google_analytics:
+  id: ""
+
+theme_mode: "auto"
+
+paginate: 5
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-include-cache
-
-# Navigation
-nav:
-  - title: Home
-    url: /
-  - title: Projects
-    url: /projects/
-  - title: Blog
-    url: /blog/
-  - title: Contact
-    url: /contact/
+  - jekyll-remote-theme
+  - jekyll-paginate
