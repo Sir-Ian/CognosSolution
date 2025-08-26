@@ -1,8 +1,5 @@
 /* Custom main stylesheet for the site
-   - loads Font Awesome from CDN for icon classes used in _config.yml
    - imports Minima's default styles
 */
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
 @import "minima";
