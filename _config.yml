@@ -1,5 +1,5 @@
-title: Cognos Solution
-description: Tech, data, and AI projects by Ian.
+title: Cognos Solution LLC
+description: Projects by Ian.
 url: https://cognossolution.com
 baseurl: ""
 
@@ -17,7 +17,6 @@ minima:
   social_links:
     github: Sir-Ian
     linkedin: an-deuberry
-    resume: /resume/
 
 # Plugins
 plugins:
@@ -25,10 +24,3 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
-
-# Navigation
-header_pages:
-  - index.md
-  - _pages/projects.md
-  - blog.md
-  - _pages/contact.md
