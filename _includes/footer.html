@@ -1,0 +1,54 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+          </li>
+          {%- if site.email -%}
+          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        {%- if site.minima.social_links -%}
+          <ul class="social-links">
+            {%- for entry in site.minima.social_links -%}
+              {%- assign platform = entry[0] -%}
+              {%- assign username = entry[1] -%}
+              {%- assign url = username -%}
+              {%- if platform == 'github' -%}
+                {%- assign url = 'https://github.com/' | append: username -%}
+                <li><a href="{{ url }}" rel="me"><i class="fab fa-github"></i></a></li>
+              {%- elsif platform == 'linkedin' -%}
+                {%- assign url = 'https://www.linkedin.com/in/' | append: username -%}
+                <li><a href="{{ url }}" rel="me"><i class="fab fa-linkedin"></i></a></li>
+              {%- elsif platform == 'resume' -%}
+                <li><a href="{{ url }}"><i class="fas fa-file"></i></a></li>
+              {%- else -%}
+                <li><a href="{{ url }}">{{ platform }}</a></li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

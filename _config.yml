@@ -11,23 +11,13 @@ markdown: kramdown
 permalink: /:categories/:title/
 
 # Author profile
-author:
-  name: Ian Deuberry
-  avatar: /assets/images/avatar.jpg
-  bio: >
-    Building automation, data pipelines, prototypes, and more to solve problems and deliver value (usually).
-    ENTJ/ENTP energy, consulting background, and a not-so-subtle obsession with cars.
-  location: Chicago, IL
-  links:
-    - label: GitHub
-      icon: "fab fa-github"
-      url: https://github.com/Sir-Ian
-    - label: LinkedIn
-      icon: "fab fa-linkedin"
-      url: https://www.linkedin.com/in/an-deuberry
-    - label: Resume
-      icon: "fas fa-file"
-      url: /resume/
+author: Ian Deuberry
+
+minima:
+  social_links:
+    github: Sir-Ian
+    linkedin: an-deuberry
+    resume: /resume/
 
 # Plugins
 plugins:
