@@ -22,26 +22,7 @@
       </div>
 
       <div class="footer-col footer-col-2">
-        {%- if site.minima.social_links -%}
-          <ul class="social-links">
-            {%- for entry in site.minima.social_links -%}
-              {%- assign platform = entry[0] -%}
-              {%- assign username = entry[1] -%}
-              {%- assign url = username -%}
-              {%- if platform == 'github' -%}
-                {%- assign url = 'https://github.com/' | append: username -%}
-                <li><a href="{{ url }}" rel="me"><i class="fab fa-github"></i></a></li>
-              {%- elsif platform == 'linkedin' -%}
-                {%- assign url = 'https://www.linkedin.com/in/' | append: username -%}
-                <li><a href="{{ url }}" rel="me"><i class="fab fa-linkedin"></i></a></li>
-              {%- elsif platform == 'resume' -%}
-                <li><a href="{{ url }}"><i class="fas fa-file"></i></a></li>
-              {%- else -%}
-                <li><a href="{{ url }}">{{ platform }}</a></li>
-              {%- endif -%}
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
+        {%- include social.html -%}
       </div>
 
       <div class="footer-col footer-col-3">
