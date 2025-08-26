@@ -1,38 +1,44 @@
-title: "Cognos Solution LLC"
-tagline: "Cognos Solution, a Jekyll blog"
-description: "Tech, data, and AI projects."
-url: "https://cognossolution.com"
+title: Cognos Solution
+description: Tech, data, and AI projects by Ian.
+url: https://cognossolution.com
 baseurl: ""
 
 theme: minima
 
-lang: en
-timezone: America/Chicago
+# Basic site options
+locale: en-US
+markdown: kramdown
+permalink: /:categories/:title/
 
+# Author profile
 author:
-  name: "Ian M. D"
-  bio: "Tech & finance background. I build automation, data pipelines, prototypes, and apps to solve problems."
-  github: "Sir-Ian"
-
-github:
-  username: "Sir-Ian"
-
-
-social:
-  name: "Ian M. D"
-  email: "ian@cognossolution.com"
+  name: Ian Deuberry
+  avatar: /assets/images/avatar.jpg
+  bio: >
+    Tech + finance brain. I build automation, data pipelines, and AI prototypes that actually work.
+    ENTJ/ENTP energy, consulting background, and a not-so-subtle obsession with cars.
+  location: Chicago, IL
   links:
-    - https://github.com/Sir-Ian
+    - label: GitHub
+      icon: "fab fa-github"
+      url: https://github.com/YOUR_GH_USERNAME
+    - label: LinkedIn
+      icon: "fab fa-linkedin"
+      url: https://www.linkedin.com/in/YOUR_LINKEDIN
+    - label: Resume
+      icon: "fas fa-file"
+      url: /resume/
 
-google_analytics:
-  id: ""
-
-theme_mode: "auto"
-
-paginate: 5
-
+# Plugins
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-paginate
+
+# Navigation
+header_pages:
+  - index.md
+  - _pages/projects.md
+  - blog.md
+  - _pages/contact.md
