@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Cognos Solution LLC</title>
+    <title>Projects - Cognos Solution LLC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
         --bg-color: #ffffff;
         --secondary-bg: #f3f4f6;
       }
-      
+
       body {
         font-family: 'Inter', sans-serif;
         margin: 0;
@@ -55,17 +55,31 @@
         padding: 4rem 1rem;
       }
 
-      .intro {
+      .projects {
         max-width: 800px;
         margin: 0 auto;
-        text-align: center;
         font-size: 1.25rem;
-        opacity: 0;
         animation: slideUp 1s ease-out forwards;
       }
 
-      .intro p {
-        margin-bottom: 2rem;
+      .project {
+        margin-bottom: 3rem;
+      }
+
+      .project h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .project a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .project a:hover {
+        color: #1d4ed8;
+        text-decoration: underline;
       }
 
       footer {
@@ -120,9 +134,13 @@
         h1 {
           font-size: 2.5rem;
         }
-        
-        .intro {
+
+        .projects {
           font-size: 1.1rem;
+        }
+
+        .project h2 {
+          font-size: 1.5rem;
         }
       }
     </style>
@@ -130,14 +148,16 @@
   <body>
     <header>
       <div class="header-content">
-        <h1>Cognos Solution LLC</h1>
+        <h1>Projects</h1>
       </div>
     </header>
     <main>
-      <section class="intro">
-        <p>The name comes from <em>cognosco</em>, a Latin verb meaning "to get to know, to learn, to recognize." It is not about abstract knowledge alone, but knowledge gained through experience and practice.</p>
-        <p>A Cognos Solution is built the same way. Each solution draws on hard-earned expertise, tested methods, and lessons learned firsthand. It's applied understanding shaped by real-world results.</p>
-        <p><a href="/projects.html">View our projects</a></p>
+      <section class="projects">
+        <article class="project">
+          <h2>TapTrust</h2>
+          <p>TapTrust is an upcoming mobile ID verifier that supports barcode IDs alongside digital credentials.</p>
+          <p><a href="https://taptrust.app">Visit TapTrust.App</a></p>
+        </article>
       </section>
     </main>
     <footer>
