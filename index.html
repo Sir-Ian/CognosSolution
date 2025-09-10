@@ -3,41 +3,141 @@
   <head>
     <meta charset="utf-8" />
     <title>Cognos Solution LLC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta nam    <header>
+      <div class="header-content">
+        <h1>Cognos Solution LLC</h1>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <p>The name comes from <em>cognosco</em>, a Latin verb meaning "to get to know, to learn, to recognize." It is not about abstract knowledge alone, but knowledge gained through experience and practice.</p>
+        <p>A Cognos Solution is built the same way. Each solution draws on hard-earned expertise, tested methods, and lessons learned firsthand. It's applied understanding shaped by real-world results.</p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>Projects by Ian</p>
+        <div class="social-links">
+          <a href="mailto:ian@cognossolution.com" title="Email">ian@cognossolution.com</a>
+          <a href="https://github.com/Sir-Ian" title="GitHub Profile">GitHub: Sir-Ian</a>
+          <a href="https://www.linkedin.com/in/ian-deuberry" title="LinkedIn Profile">LinkedIn: ian-deuberry</a>
+        </div>
+      </div>
+    </footer>content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
+      :root {
+        --primary-color: #2563eb;
+        --text-color: #1f2937;
+        --bg-color: #ffffff;
+        --secondary-bg: #f3f4f6;
+      }
+      
       body {
-        font-family: Arial, sans-serif;
+        font-family: 'Inter', sans-serif;
         margin: 0;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        line-height: 1.6;
+        line-height: 1.7;
+        color: var(--text-color);
+        background: var(--bg-color);
       }
+
       header {
-        font-size: 2.5rem;
-        font-weight: bold;
-        text-align: center;
-        padding: 2rem 1rem 1rem;
+        padding: 4rem 1rem;
+        background: var(--secondary-bg);
+        position: relative;
+        overflow: hidden;
       }
+
+      .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin: 0;
+        background: linear-gradient(135deg, var(--primary-color), #1d4ed8);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: fadeIn 1s ease-out;
+      }
+
       main {
         flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
+        padding: 4rem 1rem;
       }
+
       .intro {
         max-width: 800px;
+        margin: 0 auto;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
+        opacity: 0;
+        animation: slideUp 1s ease-out forwards;
       }
+
+      .intro p {
+        margin-bottom: 2rem;
+      }
+
       footer {
-        text-align: center;
-        padding: 1rem;
-        font-size: 0.9rem;
+        background: var(--secondary-bg);
+        padding: 3rem 1rem;
+        margin-top: 2rem;
       }
-      footer p {
-        margin: 0.2rem 0;
+
+      .footer-content {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      footer a {
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-weight: 500;
+      }
+
+      footer a:hover {
+        color: #1d4ed8;
+        text-decoration: underline;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+        
+        .intro {
+          font-size: 1.1rem;
+        }
       }
     </style>
   </head>
