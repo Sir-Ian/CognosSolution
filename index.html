@@ -7,21 +7,33 @@
     <style>
       body {
         font-family: Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
-        margin: 0;
-        padding: 2rem;
+        line-height: 1.6;
       }
       header {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: bold;
         text-align: center;
-        margin-bottom: auto;
+        padding: 2rem 1rem 1rem;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+      }
+      .intro {
+        max-width: 800px;
+        text-align: center;
+        font-size: 1.2rem;
       }
       footer {
         text-align: center;
-        margin-top: auto;
+        padding: 1rem;
         font-size: 0.9rem;
       }
       footer p {
@@ -31,6 +43,12 @@
   </head>
   <body>
     <header>Cognos Solution LLC</header>
+    <main>
+      <section class="intro">
+        <p>The name comes from cognosco, a Latin verb meaning “to get to know, to learn, to recognize.” It is not about abstract knowledge alone, but knowledge gained through experience and practice.</p>
+        <p>A Cognos Solution is built the same way. Each solution draws on hard-earned expertise, tested methods, and lessons learned firsthand. It’s applied understanding shaped by real-world results.</p>
+      </section>
+    </main>
     <footer>
       <p>Projects by Ian</p>
       <p><a href="mailto:ian@cognossolution.com">ian@cognossolution.com</a></p>
