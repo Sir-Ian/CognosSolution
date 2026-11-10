@@ -1,5 +1,5 @@
 title: Cognos Solution LLC
-description: Projects by Ian.
+description: Independent software, useful tools, and ideas put into practice by Cognos Solution LLC.
 url: https://cognossolution.com
 baseurl: ""
 
@@ -24,3 +24,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
+
+# Keep archived drafts and development files out of the public site.
+exclude:
+  - archive
+  - index.html.new
+  - Gemfile
+  - Gemfile.lock
+  - README.md
